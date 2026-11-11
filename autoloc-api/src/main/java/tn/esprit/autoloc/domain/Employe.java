@@ -33,11 +33,4 @@ public class Employe {
 
     @ManyToOne
     Agence agence;
-    @JsonIgnore
-    @OneToMany(mappedBy = "agence")
-    List<Employe> employes;
-
-    @JsonIgnore
-    @OneToMany(mappedBy = "agence")
-    List<Vehicule> vehicules;
 }
